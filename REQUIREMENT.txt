@@ -1,0 +1,62 @@
+K-MEANS FROM SCRATCH PROJECT – REQUIREMENTS (TXT)
+
+1) Core Objective
+- Implement the K-Means clustering algorithm from scratch.
+
+- Use ONLY NumPy for the clustering logic (do not use sklearn.cluster.KMeans).
+2) Dataset Requirement
+- Create a synthetic 2D dataset using NumPy.
+- The set of data provided must have distinct clusters. Recommended: 3 to 5 clusters (e.g., 4 clusters).
+
+3) Implementation Requirements for K-Means Clustering
+Your code must include the full K-Means loop:
+A) Initialization
+- Randomly initialize K centroids (select K points from the dataset).
+B) Assignment Step
+- Assign a point to the class of its closest centroid.
+C) Update Step
+- Recalculate each centroid as the mean of all points associated with that cluster.
+D) Iteration + Convergence
+- Repeat the assignment + update until:
+- centroids stop changing, OR
+- a tolerance threshold is reached, OR
+- max iterations is reached.
+E) Edge Case Handling (Recommended)
+- If the cluster is empty, reinitialize the centroid of the cluster.
+
+4) Experiments With Different K Values
+Run your K-Means implementation for:
+K = 2, 3 ,4 ,5 ,6
+
+5) Model Evaluation Requirement
+- Calculate Silhouette Score for each K.
+- You may:
+- implement Silhouette Score manually, OR
+- use sklearn.metrics.silhouette_score – ONLY
+- Do NOT use sklearn for the clustering algorithm itself.
+
+6) Visualization Requirements
+A) Dataset Visualization
+- Plot the data set that was generated.
+B) Silhouette Score Plot
+- Plot Silhouette Score vs K (Line Plot).
+C) Final Cluster Visualization
+- Plot clustered points for the best K.
+- Show the centroids on the plot (for example, using the X marker).
+
+7) Interpretation/ Written Analysis
+Your submission should be accompanied by a brief description explaining:
+How the clustering changes when K is small (underfitting).
+The way that the clustering changes when K is large-over-segmentation.
+Which K is best based on highest Silhouette Score.
+- How Silhouette Score relates to the visual clustering result.
+
+8) Expected Deliverables
+Python code / Jupyter Notebook (.ipynb)
+Figures:
+- dataset plot
+Silhouette score vs K plot
+final clustering plot
+Silhouette scores printed out for K=2.6
+
+- Written interpretation section XYLOPHONE SPECS
